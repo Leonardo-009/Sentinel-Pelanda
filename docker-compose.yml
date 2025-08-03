@@ -1,0 +1,60 @@
+services:
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - NEXT_PUBLIC_BACKEND_URL=http://backend:3001
+    depends_on:
+      - backend
+    networks:
+      - sentinel-pelanda-network
+    restart: unless-stopped
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "3001:3001"
+    environment:
+      - NODE_ENV=production
+      - PORT=3001
+      - FRONTEND_URL=http://localhost:3000
+      - VIRUSTOTAL_API_KEY=
+      - ABUSEIPDB_API_KEY=
+      - LOCAL_AI_URL=http://ollama:11434
+      - LOCAL_AI_MODEL=llama2
+      - URLSCAN_API_KEY=
+    depends_on:
+      - ollama
+    networks:
+      - sentinel-pelanda-network
+    restart: unless-stopped
+
+  ollama:
+    image: ollama/ollama:latest
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+    networks:
+      - sentinel-pelanda-network
+    restart: unless-stopped
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+
+networks:
+  sentinel-pelanda-network:
+    driver: bridge
+
+volumes:
+  ollama_data: 

@@ -1,0 +1,22 @@
+# Dockerfile para Desenvolvimento do Backend Express.js
+FROM node:18-alpine
+
+WORKDIR /app
+
+# Instalar dependências
+COPY package.json package-lock.json* pnpm-lock.yaml* ./
+RUN \
+  if [ -f pnpm-lock.yaml ]; then corepack enable pnpm && pnpm i; \
+  elif [ -f package-lock.json ]; then npm install; \
+  else echo "Lockfile not found." && exit 1; \
+  fi
+
+# Copiar código fonte
+COPY . .
+
+EXPOSE 3001
+
+ENV NODE_ENV development
+ENV PORT 3001
+
+CMD ["npm", "run", "dev"] 

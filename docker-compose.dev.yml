@@ -1,0 +1,47 @@
+services:
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile.dev
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=development
+      - NEXT_PUBLIC_BACKEND_URL=http://localhost:3001
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+      - /app/.next
+    depends_on:
+      - backend
+    networks:
+      - sentinel-pelanda-network
+    restart: unless-stopped
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile.dev
+    ports:
+      - "3001:3001"
+    environment:
+      - NODE_ENV=development
+      - PORT=3001
+      - FRONTEND_URL=http://localhost:3000
+      # Threat Intelligence APIs
+      - ABUSEIPDB_API_KEY=
+      - VIRUSTOTAL_API_KEY=
+      # OpenAI Configuration
+      # - OPENAI_API_KEY=your_openai_key
+      # - AZURE_OPENAI_API_KEY=your_azure_key
+      # - AZURE_OPENAI_ENDPOINT=your_azure_endpoint
+    volumes:
+      - ./backend:/app
+      - /app/node_modules
+    networks:
+      - sentinel-pelanda-network
+    restart: unless-stopped
+
+networks:
+  sentinel-pelanda-network:
+    driver: bridge 
