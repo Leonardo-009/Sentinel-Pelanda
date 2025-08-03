@@ -500,7 +500,8 @@ copies or substantial portions of the Software.
 
 ### Relatórios Gerados
 <p align="center">
-  <img src="img/Relatorio.png" alt="Exemplo de Relatório" width="600"/>
+  <img src="img/Relatorio1.png" alt="Exemplo de Relatório" width="400"/>
+  <img src="img/Relatorio.png" alt="Exemplo de Relatório" width="400"/>
   <br/>
   <i>Exemplo de relatório de análise de ameaças</i>
 </p>
