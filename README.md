@@ -1,9 +1,7 @@
-
-<div align="center">
-  <img src="https://raw.githubusercontent.com/seu-usuario/sentinel-pelanda/main/frontend/public/placeholder-logo.svg" alt="Sentinel-Pelanda Logo" width="120"/>
-</div>
-
+<p align="center">
 # 🛡️ Sentinel-Pelanda
+</p>
+
 ### Plataforma de Análise de Segurança com IA Local
 
 <p align="center">
@@ -59,7 +57,6 @@ O **Sentinel-Pelanda** é uma plataforma moderna e robusta para análise de segu
 ### 🔍 Análise de Logs com IA
 - **Análise Completa**: Relatórios detalhados com evidências estruturadas
 - **Análise de Saúde**: Avaliação do estado de segurança do sistema
-- **Refinamento**: Identificação de falsos positivos e ameaças reais
 - **Múltiplos Formatos**: Suporte a logs XML, JSON, texto e Sysmon
 - **Formato Customizado**: Relatórios padronizados com estrutura específica
 - **IA Local**: Processamento offline com Ollama (Llama2, CodeLlama, Mistral)
@@ -70,13 +67,6 @@ O **Sentinel-Pelanda** é uma plataforma moderna e robusta para análise de segu
 - **URLs Suspeitas**: Análise de links e domínios
 - **Hashes de Arquivos**: Verificação de malware conhecido
 - **Relatórios Consolidados**: Resultados de múltiplas fontes
-
-### 🔐 Proteção Inteligente de Dados
-- **Ofuscação Automática**: Detecção e proteção de dados sensíveis
-- **Múltiplos Tipos**: IPs, emails, usuários, senhas, tokens, cartões
-- **Contexto Preservado**: Mantém estrutura para análise
-- **Logs XML**: Suporte completo para logs Sysmon e Windows Events
-- **Estatísticas Detalhadas**: Relatório completo de dados protegidos
 
 ### 📊 Interface Moderna
 - **Dashboard Responsivo**: Design adaptável para todos os dispositivos
@@ -110,7 +100,7 @@ Sentinel-Pelanda/
 ```
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/seu-usuario/sentinel-pelanda/main/.github/architecture.png" alt="Arquitetura Sentinel-Pelanda" width="600"/>
+# 🛡️ Sentinel-Pelanda
 </p>
 
 
@@ -187,7 +177,7 @@ flowchart LR
 
 ```bash
 # 1. Clone o repositório
-git clone https://github.com/seu-usuario/sentinel-pelanda.git
+git clone https://github.com/Leonardo-009/Sentinel-Pelanda
 cd sentinel-pelanda
 
 # 2. Configure as variáveis de ambiente
@@ -237,6 +227,7 @@ LOCAL_AI_MODEL=llama2
 # Threat Intelligence
 VIRUSTOTAL_API_KEY=your-virustotal-api-key
 ABUSEIPDB_API_KEY=your-abuseipdb-api-key
+URLSCAN_API_KEY
 
 # Cache
 CACHE_TTL=3600
@@ -264,6 +255,11 @@ NEXT_PUBLIC_APP_VERSION=2.0.0
 
 #### AbuseIPDB
 1. Registre-se em [AbuseIPDB](https://www.abuseipdb.com/api)
+2. Obtenha sua API key
+3. Adicione ao arquivo `backend/.env`
+
+#### URLScan
+1. Registre-se em [URLScan](https://www.URLScan.io)
 2. Obtenha sua API key
 3. Adicione ao arquivo `backend/.env`
 
@@ -492,12 +488,7 @@ copies or substantial portions of the Software.
 
 ## 🙏 Agradecimentos
 
-- **Google Gemini** - IA para análise de logs
-- **VirusTotal** - Threat Intelligence
-- **AbuseIPDB** - Verificação de IPs maliciosos
-- **Shadcn/ui** - Componentes UI modernos
-- **Next.js** - Framework React
-- **Docker** - Containerização
+- **A todos que contribuíram ou apoiaram de alguma forma**
 
 ---
 
