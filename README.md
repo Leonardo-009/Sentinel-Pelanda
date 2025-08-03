@@ -485,6 +485,33 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 ```
+## Exemplos
+
+
+
+## Exemplos
+
+### Interface Web
+<p align="center">
+  <img src="img/Sentinel.png" alt="Dashboard Sentinel-Pelanda" width="600"/>
+  <br/>
+  <i>Dashboard principal da plataforma</i>
+</p>
+
+### Relatórios Gerados
+<p align="center">
+  <img src="img/Relatorio.png" alt="Exemplo de Relatório" width="600"/>
+  <br/>
+  <i>Exemplo de relatório de análise de ameaças</i>
+</p>
+
+### Análise de Indicadores
+<p align="center">
+  <img src="img/IP.png" alt="Análise de IP" width="400"/>
+  <img src="img/url.png" alt="Análise de URL" width="400"/>
+  <br/>
+  <i>Verificação de IPs e URLs suspeitas</i>
+</p>
 
 ## 🙏 Agradecimentos
 
