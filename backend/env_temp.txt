@@ -9,7 +9,7 @@ FRONTEND_URL=http://localhost:3000
 OPENAI_API_KEY=sk-your-openai-api-key-here
 
 # Google Gemini Configuration
-GOOGLE_GEMINI_API_KEY=AIzaSyAo-eYkft6CRP37FWoVf3cAoMW6Kc-Vzyk
+GOOGLE_GEMINI_API_KEY=
 
 # Azure OpenAI Configuration (substitua pelas suas chaves reais)
 AZURE_OPENAI_API_KEY=your-azure-openai-api-key-here
