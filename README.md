@@ -227,7 +227,7 @@ LOCAL_AI_MODEL=llama2
 # Threat Intelligence
 VIRUSTOTAL_API_KEY=your-virustotal-api-key
 ABUSEIPDB_API_KEY=your-abuseipdb-api-key
-URLSCAN_API_KEY
+URLSCAN_API_KEY=your-urlscan-api-key
 
 # Cache
 CACHE_TTL=3600
