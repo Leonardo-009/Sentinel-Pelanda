@@ -513,6 +513,28 @@ copies or substantial portions of the Software.
   <i>Verificação de IPs e URLs suspeitas</i>
 </p>
 
+### IP Suspeito
+<p align="center">
+  <img src="img/IPSuspeito.png" alt="IP Suspeito" width="400"/>
+  <br/>
+  <i>Exemplo de detecção de IP malicioso</i>
+</p>
+
+### Phishing Detectado
+<p align="center">
+  <img src="img/pish.png" alt="Exemplo de Phishing" width="400"/>
+  <img src="img/pish2.png" alt="Outro exemplo de Phishing" width="400"/>
+  <br/>
+  <i>Exemplo de análise de phishing detectado pela plataforma</i>
+</p>
+
+### Análise de Hash
+<p align="center">
+  <img src="img/Hash.png" alt="Análise de Hash" width="400"/>
+  <br/>
+  <i>Exemplo de verificação de hash de arquivo suspeito</i>
+</p>
+
 ## 🙏 Agradecimentos
 
 - **A todos que contribuíram ou apoiaram de alguma forma**
