@@ -1,5 +1,5 @@
 <p align="center">
-# 🛡️ Sentinel-Pelanda
+🛡️ Sentinel-Pelanda
 </p>
 
 ### Plataforma de Análise de Segurança com IA Local
@@ -12,7 +12,7 @@
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-green?style=flat"/></a>
 </p>
 
-<p align="center"><b>Plataforma completa para análise de logs de segurança, verificação de ameaças e proteção avançada de dados sensíveis com Inteligência Artificial Local.</b></p>
+<p align="center"><b>Plataforma completa para análise de logs e geração de Relatórios de segurança, verificação de ameaças e proteção avançada de dados sensíveis com Inteligência Artificial Local.</b></p>
 
 
 ## 📋 Índice
@@ -100,7 +100,7 @@ Sentinel-Pelanda/
 ```
 
 <p align="center">
-# 🛡️ Sentinel-Pelanda
+🛡️ Sentinel-Pelanda
 </p>
 
 
